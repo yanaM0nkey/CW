@@ -22,6 +22,12 @@ public class СW1 {
     }
     sum = sum/a.length;
     System.out.println(sum);
+    
+    Long I = 257L;
+    byte c = 10;
+    byte Z = I.byteValue();
+    System.out.println(Z);
     }
     
+   
 }
