@@ -91,6 +91,11 @@ public class Patient extends People {
     public void setAge(int age) {
         this.age = age;
     }*/
+
+    @Override
+    public void myTest() {
+        System.out.println("Patient myTest");
+    }
     
    
 }

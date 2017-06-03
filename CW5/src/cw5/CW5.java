@@ -6,8 +6,8 @@ public class CW5 {
     
     public static void main(String[] args) {
         
-        Patient p0 = new Patient("AAAA", 12);
-        Patient p1 = new Patient("BBBB", 22);
+        //Patient p0 = new Patient("AAAA", 12);
+        //Patient p1 = new Patient("BBBB", 22);
         //Patient p2 = new Patient("nvdd", 32);
         //Patient p3 = new Patient();
        // System.out.println(p.getAge());
@@ -22,7 +22,22 @@ public class CW5 {
        System.out.println("jfdfhlk00".concat("kzjnfk"));
        
        
+       /*People p = new People();*/ //не можем потому что класс абстрактный
+       //переменную созлать можно
+       People pBase = new Patient();
+       
+       callMyTest(pBase);
+       
+       People pBase2 = new Doctor();
+       
+       callMyTest(pBase2);
+       
+       
+       
        
     }
     
+    public static void callMyTest(People p){
+        p.myTest();
+    }
 }

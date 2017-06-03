@@ -10,5 +10,10 @@ public class Doctor extends People{
     public void setRoom(int room) {
         this.room = room;
     }
+
+    @Override
+    public void myTest() {
+        System.out.println("Doctor myTest");
+    }
     
 }

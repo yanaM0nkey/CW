@@ -1,9 +1,12 @@
 package cw5;
 
 
-public class People {//по умолчанию наследуется от Object(для всех объектов)
+public abstract class People {//по умолчанию наследуется от Object(для всех объектов)
     private String name;
     private int age;
+    
+    
+    public abstract void myTest();
 
     public String getName() {
         return name;
