@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.TreeMap;
 
@@ -89,7 +90,17 @@ public class CW11 {
             }
         });
    
-        
+        ArrayList<Integer> list3 = new ArrayList<>();
+        list3.add(1);
+        list3.add(2);
+        list3.add(2);
+        System.out.println(list3.toString());
+
+        HashSet<Integer> set = new HashSet<>(list3);
+
+        list3.clear();
+        list3.addAll(set);
+        System.out.println(list3.toString());
                 
             }
                 
