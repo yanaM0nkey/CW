@@ -9,8 +9,12 @@ public class Main {
 
   
     public static void main(String[] args) {
-        StuffCollection<PvtPeople> stuff = new StuffCollection<>();
-        test("AAA", String.class);
+        StuffCollection<String> stuff = new StuffCollection<>();
+        stuff.addDirector("jrhgfhsb");
+
+        stuff.add("A", "dagvhak");
+
+        String director = stuff.getDirector();
     }
     
     
